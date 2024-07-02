@@ -122,7 +122,7 @@ function buildDOM(events) {
 }
 
 /* Load events from API */
-fetch("/events.json")
+fetch("./events.json")
   .then((res) => res.json())
   .then((events) => {
     window.minDate = new Date(events[0].event_date);
